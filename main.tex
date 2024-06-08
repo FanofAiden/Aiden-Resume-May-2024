@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape {Aiden Fan}} \\ \vspace{1pt}
+    \href{mailto:aidenfan1648@gmail.com}{{aidenfan1648@gmail.com}} $|$
+    \small 613-618-8379 $|$ 
+    \href{https://linkedin.com/in/aiden-fan}{{Linkedin - Aiden Fan}} $|$
+    \href{https://github.com/FanofAiden}{{Github - FanofAiden}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carleton University}{Ottawa, ON}
+      {Bachelor of Computer Science, Minor in Business $|$ 3rd Year $|$ CGPA: 10.2}{Expected May 2026}
+
+  \resumeSubHeadingListEnd
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Relevant Courses}{: Data Structures and Algorithms (Java), Software Engineering (C++), Database Management Systems, Web Application Development, Systems Programming }
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Employment and Social Development Canada (ESDC)}{Gatineau, QC}
+      {Software Developer/Programmer}{May 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Designed and deployed service applications for the Canadian Dental Care Plan's (CDCP) CRA assessment service, boosting robustness and performance.}
+        \resumeItem{Developed REST API features using Apache Camel and Spring Boot in Java while using Maven as the primary testing tool, reducing bug reports and enhancing software reliability.}
+        \resumeItem{In progress of enhancing department-wide back-end admin infrastructure, increasing admin control and flexibility within the program.}
+        \resumeItem{Collaborated with development and operations teams to troubleshoot deployment/implementation issues, thereby cultivating cross-functional team cooperation and communication.}
+        \resumeItem{Utilized Atlassian products (Jira, Confluence) and Azure DevOps for version control in a collaborative Agile Scrum team environment, ensuring quality and accuracy in meeting project timelines.}
+
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Mixtape Maker} $|$ \emph{iTunes Search API, SQLite, JavaScript, HTML/CSS, Node.js, Express.js,}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a full-stack web application for users to create customized playlists of music.}
+            \resumeItem{Implemented SQL to save and store user-specific playlists to the database, allowing for more functionality in the application.}
+            \resumeItem{Used HTML/CSS for front-end aspects while leveraging Node.js and Express.js for robust back-end functionality.}
+            \resumeItem{Integrated iTunes Search API with the back-end server, facilitating access to all possible songs released, enhancing user flexibility in playlist }
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Pokémon} $|$ \emph{Java, Swing (Java), JavaFX, Apache Netbeans}}{}
+          \resumeItemListStart
+            \resumeItem{Applied multi-threading to enable the random spawning of Pokémon while the user roams, increasing performance efficiency.}
+            \resumeItem{Implemented a fighting function for battling other Pokémon, producing greater game capabilities.}
+            \resumeItem{Engineered an interactive and intuitive GUI using Java Swing, thereby enhancing UX.}
+          \resumeItemListEnd
+    \resumeProjectHeading
+          {\textbf{Phantom Hunt Simulation} $|$ \emph{C, Linux, Makefiles, Valgrind}}{}
+          \resumeItemListStart
+            \resumeItem{Improved throughput with multi-threading, allowing for ghost and hunter threads to function simultaneously.}
+            \resumeItem{Developed multiple functionalities for the hunters and the ghost, resulting in a complete simulation.}
+            \resumeItem{Utilized Valgrind to effectively debug while augmenting productivity to ensure a timely and accurate simulation.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Introduction to Cloud Computing} $|$ \href{https://www.coursera.org/account/accomplishments/certificate/WAG9BRR6M9MM}{{IBM}}}{June 2023}
+    \resumeSubHeadingListEnd
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+      {\textbf{DreamLaunch} $|$ \href{https://dreamlinked.ca/}{{DreamLinked}}}{July 2023}
+      \resumeItemListStart
+        \resumeItem{Participated in a 48-hour startup weekend where business ideas are brought to life and earned 3rd place.}
+        \resumeItem{Collaborated with two team members to build a creative AI startup that utilizes AI agents in the workplace, improving productivity and business operations by 40\%.}
+        \resumeItem{Successfully created and pitched the business model to founders and employees of startups.}
+      \resumeItemListEnd
+      \resumeItemListEnd
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \begin{tabular}{ l l }
+    \textbf{Languages:} & Java, Python, C/C++, JavaScript, C\#, SQL (Postgres)         \\
+    \textbf{Technologies: } & RestAPI, HTML/CSS, Node.js, Express.js, PostgreSQL, SQLite, Excel \\
+    \textbf{Frameworks: } & Apache Camel, Maven, Spring Boot, JavaFx, Swing \\
+    \textbf{Development: } & Atlassian, Azure, Postman, SoapUI, Jira, Agile, Scrum, Linux, Git \\
+\end{tabular}
+\vspace{2mm}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
